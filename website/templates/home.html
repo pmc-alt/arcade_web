@@ -1,95 +1,16 @@
+
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<!-- Basic -->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Site Metas -->
-    <title>Arcade Enter </title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="#" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" />
-    <!-- Pogo Slider CSS -->
-    <link rel="stylesheet" href="{% static 'website/css/pogo-slider.min.css' %}" />
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'website/css/style1.css' %}" />
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'website/css/custom.css' %}" />
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-
-    <!-- LOADER -->
-    <div id="preloader">
-        <div class="loader">
-            <img src="{% static 'website/images/loader.gif' %}" alt="#" />
-        </div>
-    </div>
-    <!-- end loader -->
-    <!-- END LOADER -->
-
-    <!-- Start header -->
-    <header class="top-header">
-        <nav class="navbar header-nav navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src=""  alt=""><h2 style="font-weight: bold; font-size: 20px;">EA</h2></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">Aboutus</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="#">Entertainment</a></li>
-                        <li><a class="nav-link" href="#">Internships</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                        <li><a class="nav-link active" style="background:#f2184f;color:#fff;" href="#">Sinup now</a></li>
-                    </ul>
-                </div>
-                <div> 
-                </div>
-                <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="{% static 'website/images/search_icon.png' %}" alt="#" />
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- End header -->
+{% block title %}Arcade Home{% endblock %}
+{% block content %}
 
     <!-- Start Banner -->
     <div class="ulockd-home-slider">
         <div class="container-fluid">
             <div class="row">
+                
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url({% static 'website/img/banner-img3.jpg' %});">
+                    <div class="pogoSlider-slide" style="background-image:url({% static 'website/img/banner-img4.jpg' %});">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -99,7 +20,59 @@
                                         <h4><span class="theme_color">For your Entertainment</span></h4>
                                         <br>
                                         <p>Get best Entertainment and IT solution with us today</p>
-                                        <a class="contact_bt" href="about.html">About us</a>
+                                        <div class="buttons2" align="right">
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-5.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-9.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-8.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pogoSlider" id="js-main-slider">
+                    <div class="pogoSlider-slide" style="background-image:url({% static 'website/img/banner-img5.jpg' %});">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3 style="color: cornsilk;">Arcade<br>Entertainment</h3>
+                                        <br>
+                                        <h4><span class="theme_color">For your Entertainment</span></h4>
+                                        <br>
+                                        <p>Get best Entertainment and IT solution with us today</p>
+                                        <div class="buttons2" align="right">
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-5.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-9.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-8.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pogoSlider" id="js-main-slider">
+                    <div class="pogoSlider-slide" style="background-image:url({% static 'website/img/banner-img6.jpg' %});">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3 style="color: cornsilk;">Arcade<br>Entertainment</h3>
+                                        <br>
+                                        <h4><span class="theme_color">For your Entertainment</span></h4>
+                                        <br>
+                                        <p>Get best Entertainment and IT solution with us today</p>
+                                        <div class="buttons2" align="right">
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-5.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-9.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-8.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +88,13 @@
                                         <h4><span class="theme_color">For your Entertainment</span></h4>
                                         <br>
                                         <p>Get best Entertainment and IT solution with us today</p>
-                                        <a class="contact_bt" href="about.html">About us</a>
+                                        <div class="buttons2" align="right">
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-5.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-9.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-8.png' %}" alt="#"></button>
+                                            <button id=" showpending"class="service_icons"><img width="75" height="75" src="{% static 'website/img/icon-7.png' %}" alt="#"></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -123,6 +102,7 @@
                     </div>
                 </div>
                 <!-- .pogoSlider -->
+
             </div>
         </div>
     </div>
@@ -278,12 +258,14 @@
 			</div>-->
         </div>
     </div>
-	<!-- end section 
-	
-	<!-- Home Room Section Begin -->
+	<!-- end section
+    Home Room Section Begin -->
+
+
     <section class="hp-room-section">
 
-        <div class="container-fluid">
+
+        
            <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -292,8 +274,85 @@
                     </div>
                 </div>
             </div>
-            <div class="hp-room-items">
-                <div class="row">
+            <!-- Home series Section End -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+                           <div class="left">
+                             <p class="section_count"></p>
+                           </div>
+                           <div class="right">
+                            <p class="small_tag"></p>
+                            <h2><span class="theme_color">Latest Movies</span></h2>
+                            <p class="large"></p>
+                          </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-top_30">
+                <div class="col-lg-12 margin-top_30">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="hp-room-items">
+                                <div class="row">
+                                      <div class="col-lg-3 col-md-6">
+                                            <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/KatyKeene.jpg' %}">
+                                                <div class="hr-text">
+                                                    <h3>Katy Keene</h3>
+                                                    <h2>45 min<span>/Per Episode</span></h2>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="r-o">Seasons:</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Creator:</td>
+                                                                <td>Roberto Aguirre-Sacasa, Michael Grassi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Genre:</td>
+                                                                <td>Comedy, Drama</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="#" class="primary-btn">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="col-lg-3 col-md-6">
+                                            <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/KatyKeene.jpg' %}">
+                                                <div class="hr-text">
+                                                    <h3>Katy Keene</h3>
+                                                    <h2>45 min<span>/Per Episode</span></h2>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="r-o">Seasons:</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Creator:</td>
+                                                                <td>Roberto Aguirre-Sacasa, Michael Grassi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Genre:</td>
+                                                                <td>Comedy, Drama</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="#" class="primary-btn">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/manifest.jpg' %}">
                             <div class="hr-text">
@@ -320,24 +379,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/swat.jpg' %}">
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/oval.jpg' %}">
                             <div class="hr-text">
-                                <h3>S.W.A.T</h3>
+                                <h3>TYLER PERRY'S THE OVAL</h3>
                                 <h2>42 min<span>/Per Episode</span></h2>
                                 <table>
                                     <tbody>
                                         <tr>
                                             <td class="r-o">Seasons:</td>
-                                            <td>3,2,1</td>
+                                            <td>1</td>
                                         </tr>
                                         <tr>
                                             <td class="r-o">Creator:</td>
-                                            <td>Aaron Rahsaan Thomas</td>
+                                            <td>Tyler Perry</td>
                                         </tr>
                                         <tr>
                                             <td class="r-o">Genre:</td>
-                                            <td>Action, Adventure, Crime, Drama</td>
+                                            <td>Drama</td>
                                         </tr>
 
                                     </tbody>
@@ -346,8 +405,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/oval.jpg' %}">
+                </div>
+             </div>
+          </div>
+
+                        <!--here-->
+            <div class="carousel-item">
+            <div class="hp-room-items">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/swat.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/manifest.jpg' %}">
                             <div class="hr-text">
                                 <h3>TYLER PERRY'S THE OVAL</h3>
                                 <h2>42 min<span>/Per Episode</span></h2>
@@ -373,10 +466,11 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/KatyKeene.jpg' %}">
+                        
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/swat.jpg' %}">
                             <div class="hr-text">
-                                <h3>Katy Keene</h3>
-                                <h2>45 min<span>/Per Episode</span></h2>
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
                                 <table>
                                     <tbody>
                                         <tr>
@@ -385,11 +479,11 @@
                                         </tr>
                                         <tr>
                                             <td class="r-o">Creator:</td>
-                                            <td>Roberto Aguirre-Sacasa, Michael Grassi</td>
+                                            <td>Tyler Perry</td>
                                         </tr>
                                         <tr>
                                             <td class="r-o">Genre:</td>
-                                            <td>Comedy, Drama</td>
+                                            <td>Drama</td>
                                         </tr>
 
                                     </tbody>
@@ -398,11 +492,61 @@
                             </div>
                         </div>
                     </div>
+                                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/oval.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Home Room Section End -->
+    </div>
+ <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                     </div>
+                </div>
+                    <div class="col-lg-12">
+                      <p>...</p>
+                    </div>
+
+                <div class="col-lg-12">
+                    <div class="full center">
+                        <a href="about.html" class="hvr-radial-out button-theme">See More ></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+    <!-- Home series Section End -->
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -413,7 +557,7 @@
                              <p class="section_count"></p>
                            </div>
                            <div class="right">
-                            <p class="small_tag">Series</p>
+                            <p class="small_tag"></p>
                             <h2><span class="theme_color">Latest Series</span></h2>
                             <p class="large"></p>
                           </div>    
@@ -424,57 +568,245 @@
             <div class="row margin-top_30">
                 <div class="col-lg-12 margin-top_30">
                     <div id="demo" class="carousel slide" data-ride="carousel">
-
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                                <div class="hp-room-items">
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/Jesus.jpg' %}" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/KatyKeene.jpg' %}" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/manifest.jpg' %}" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/ottoman.jpg' %}" alt="#" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/oval.jpg' %}" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/swat.jpg'" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/manifest.jpg' %}" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="{% static 'website/images/KatyKeene.jpg' %}" alt="#" />
-                                    </div>
-                                </div>
+                                      <div class="col-lg-3 col-md-6">
+                                            <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/KatyKeene.jpg' %}">
+                                                <div class="hr-text">
+                                                    <h3>Katy Keene</h3>
+                                                    <h2>45 min<span>/Per Episode</span></h2>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="r-o">Seasons:</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Creator:</td>
+                                                                <td>Roberto Aguirre-Sacasa, Michael Grassi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Genre:</td>
+                                                                <td>Comedy, Drama</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="#" class="primary-btn">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="col-lg-3 col-md-6">
+                                            <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/KatyKeene.jpg' %}">
+                                                <div class="hr-text">
+                                                    <h3>Katy Keene</h3>
+                                                    <h2>45 min<span>/Per Episode</span></h2>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="r-o">Seasons:</td>
+                                                                <td>1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Creator:</td>
+                                                                <td>Roberto Aguirre-Sacasa, Michael Grassi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="r-o">Genre:</td>
+                                                                <td>Comedy, Drama</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="#" class="primary-btn">More Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/manifest.jpg' %}">
+                            <div class="hr-text">
+                                <h3>MANIFEST</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1,2</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Jeff Rake, Robert Zemeckis, Jack Rapke</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama, Mystery</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
                             </div>
                         </div>
+                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/oval.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
 
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+             </div>
+          </div>
 
-                <div class="col-lg-12">
-                    <p>...</p>
+                        <!--here-->
+            <div class="carousel-item">
+            <div class="hp-room-items">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/swat.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/manifest.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        
+                    <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/swat.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                        <div class="hp-room-item set-bg" data-setbg="{% static 'website/images/oval.jpg' %}">
+                            <div class="hr-text">
+                                <h3>TYLER PERRY'S THE OVAL</h3>
+                                <h2>42 min<span>/Per Episode</span></h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="r-o">Seasons:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Creator:</td>
+                                            <td>Tyler Perry</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="r-o">Genre:</td>
+                                            <td>Drama</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <a href="#" class="primary-btn">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
+ <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                     </div>
+                </div>
+                    <div class="col-lg-12">
+                      <p>...</p>
+                    </div>
 
                 <div class="col-lg-12">
                     <div class="full center">
@@ -495,10 +827,10 @@
                     <div class="full">
                         <div class="heading_main text_align_left white_fonts">
 						   <div class="left">
-						     <p class="section_count"></p>
+						     <p class="section_count">..</p>
 						   </div>
 						   <div class="right">
-						    <h2>Arcade <span class="theme_color">INformation</h2>
+						    <h2>Arcade <span class="theme_color">..</h2>
 							<p class="large">What we done</p>
                           </div>	
                         </div>
@@ -511,7 +843,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="full">
-                        <a href="" class="contact_bt">Read More ></a>
+                        <a href="#" class="contact_bt">Read More ></a>
                     </div>
                 </div>
             </div>
@@ -725,137 +1057,4 @@
 	</div>
 	<!-- end section -->
 
-    <!-- Start Footer -->
-    <footer class="footer-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 margin-bottom_30">
-				   <img src="{% static 'website/img/logo2.png' %}" width="120px" height="80px" alt="#" />
-				</div>
-               <div class="col-xl-6 white_fonts">
-                    <div class="row">
-					<div class="col-md-12 white_fonts margin-bottom_30">
-					   <h3>Contact Us</h3>
-					</div>
-                        <div class="col-md-4">
-                            <div class="full icon">
-                                <img src="{% static 'website/images/social1.png' %}">
-                            </div>
-                            <div class="full white_fonts">
-                                <p>Juja Nairobi 
-                                    <br>Kenya</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="full icon">
-                                <img src="{% static 'website/images/social2.png' %}">
-                            </div>
-                            <div class="full white_fonts">
-                                <p>consultation@arcade.com
-                                    <br>consultation@softwave.com</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="full icon">
-                                <img src="{% static 'website/images/social3.png' %}">
-                            </div>
-                            <div class="full white_fonts">
-                                <p>(+254) 7585 73375
-                                    <br>(+254) 7585 73375</p>
-                            </div>
-                        </div>
-						<div class="col-md-12">
-						   <ul class="full social_icon margin-top_20">
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-						</div>
-                    </div>
-                </div>
-				
-				 <div class="col-xl-6 white_fonts">
-				    <div class="row">
-					   <div class="col-md-6">
-					     <div class="footer_blog footer_menu">
-						    <h3>Menus</h3>
-						    <ul> 
-							  <li><a href="index.html">Home</a></li>
-							  <li><a href="about.html">About Us</a></li>
-							  <li><a href="services.html">Services</a></li>
-							  <li><a href="#">Blog</a></li>
-							  <li><a href="contact.html">Contact us</a></li>
-							</ul>
-						 </div>
-						 <div class="footer_blog recent_post_footer">
-						   <h3>Recent updates</h3>
-						   <p> </p></div>
-					   </div>
-					   <div class="col-md-6">
-					     <div class="footer_blog full">
-						     <h3>Send Us An Email</h3>
-							 <div class="newsletter_form">
-							    <form action="index.html">
-								   <input type="email" placeholder="Your Email" name="#" required />
-								   <button>Submit</button>
-								</form>
-							 </div>
-						 </div>
-					   </div>
-					</div>
-				 </div>
-
-            </div>
-            
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <div class="footer_bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="crp">© 2019 Business . All Rights Reserved.</p>
-                    <ul class="bottom_menu">
-                        <li><a href="#">Term of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="{% static 'website/js/jquery.min.js' %}"></script>
-    <script src="{% static 'website/js2/jquery.min.js' %}"></script>
-	<script src="{% static 'website/js/popper.min.js' %}"></script>
-    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
-    <!-- ALL PLUGINS -->
-    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'website/js/jquery.pogo-slider.min.js' %}"></script>
-    <script src="{% static 'website/js/slider-index.js' %}"></script>
-    <script src="{% static 'website/js/smoothscroll.js' %}"></script>
-    <script src="{% static 'website/js/form-validator.min.js' %}"></script>
-    <script src="{% static 'website/js/contact-form-script.js' %}"></script>
-    <script src="{% static 'website/js/isotope.min.js' %}"></script>
-    <script src="{% static 'website/js/images-loded.min.js' %}"></script>
-    <script src="{% static 'website/js/custom.js' %}"></script>
-     <script src="{% static 'website/js/counter.js' %}"></script>
-
-
-
- <!-- <script src="{% static 'website/js2/jquery-3.3.1.min.js' %}"></script>-->
-  <script src="{% static 'website/js2/jquery-ui.min.js' %}"></script>
-  <script src="{% static 'website/js2/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'website/js2/jquery.nice-select.min.js' %}"></script>
-  <script src="{% static 'website/js2/jquery.slicknav.js' %}"></script>
-  <script src="{% static 'website/js2/bootstrap.min.js' %}"></script>
-  <script src="{% static 'website/js2/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'website/js2/main.js' %}"></script>
-	
-</body>
-
-</html>
+  {% endblock %}  
