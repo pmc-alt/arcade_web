@@ -27,7 +27,7 @@
     <!-- Site CSS -->
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'website/css/style1.css' %}" />
-    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/style3.css' %}" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" />
     <!-- Custom CSS -->
@@ -50,30 +50,80 @@
     </div>
     <!-- end loader -->
     <!-- END LOADER -->
+    
 
+
+
+    <!-- Header Section Begin -->
+    
+    <!-- Header End -->
     <!-- Start header -->
     <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a class="nav-link active" href="index.html"><img src="{% static 'website/img/logo2.2.png' %}" width="75" height="50" alt=""></a>
+                
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">Aboutus</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="#">Entertainment</a></li>
-                        <li><a class="nav-link" href="#">Internships</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
-                        <li><a class="nav-link active" style="background:#f2184f;color:#fff;" href="#">Sinup now</a></li>
-                    </ul>
-                </div>
+                
                 <div> 
+                    <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="{% static 'website/img/logo2.2.png' %}" alt="arcade" height="55" width="75">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li class="active"><a href="{% url 'home'%}">Home</a></li>
+                                    <li><a href="#">About Us</a>
+                                        <ul class="dropdown">
+                                            <li><a href="">Contact</a></li>
+                                            <li><a href="">Events</a></li>
+                                            <li><a href="">Projects</a></li>
+                                            <li><a href="">Players Profile</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Entertainment</a>
+                                        <ul class="dropdown">
+                                            <li><a href="">Movies</a></li>
+                                            <li><a href="#">Series</a></li>
+                                            <li><a href="#">Documentaries</a></li>
+                                            <li><a href="#">Latest Updates</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Softwares</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Pc Games</a></li>
+                                            <li><a href="#">Pc Sofrwares</a></li>
+                                            <li><a href="#">Antivirus</a></li>
+                                            <li><a href="#">Bulk SMS</a></li>
+                                            <li><a href="#">other services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Internships</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
                 </div>
                 <div class="search-box">
                     <input type="text" class="search-txt" placeholder="Search">
